@@ -445,11 +445,13 @@ Main = (hello \/ count)*;
 The first two lines refer to the kind of events our specification handles.
 In particular, the second one has a constraint on the value observed for the topic count. Very naively, we are just saying that the count events are valid only if greater than 100.
 
-The last step is to change inside orchestrator.py the third argument of start_monitor, from 'log' to 'filter'.
+The last step is to change inside orchestrator.py the third argument of start_monitor, from 'log' to 'filter'. And we also need to increase the sleep time for being sure of observing the filter behaviour. 
 
 ```python
 ...
 start_monitor(True, 'log.txt', 'filter', '127.0.0.1', 8080, [])
+...
+time.sleep(30)
 ...
 ```
 
