@@ -1,0 +1,5 @@
+hello matches {topic:'chatter', data:'hello'};
+count matches {topic:'count', data:val} with val > 100;
+over18 matches {topic:'person', age: val, car:{plate:'thx'}, name:'ROS User'} with val > 17;
+
+Main = (hello \/ count \/ over18)*;

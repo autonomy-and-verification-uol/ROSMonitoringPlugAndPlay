@@ -1,0 +1,900 @@
+Trace expression:
+star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5998{data:hello,time:1560338696.949435,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_694{age:20,car:_646{plate:THX,year:2019},name:ROS User,time:1560338696.952435,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1984{data:0,time:1560338696.95737,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2864{data:hello,time:1560338697.049992,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3710{data:1,time:1560338697.053074,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4828{age:20,car:_4780{plate:THX,year:2019},name:ROS User,time:1560338697.056155,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6168{data:hello,time:1560338697.150101,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:2,time:1560338697.152848,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338697.155891,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338697.250463,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4018{age:20,car:_3970{plate:THX,year:2019},name:ROS User,time:1560338697.253613,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5308{data:3,time:1560338697.256541,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338697.348446,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:4,time:1560338697.353386,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338697.357344,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338697.449756,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3730{data:5,time:1560338697.452679,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4848{age:20,car:_4800{plate:THX,year:2019},name:ROS User,time:1560338697.455998,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338697.549444,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_770{age:20,car:_722{plate:THX,year:2019},name:ROS User,time:1560338697.553378,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2060{data:6,time:1560338697.556004,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2940{data:hello,time:1560338697.64779,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3786{data:7,time:1560338697.652521,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4904{age:20,car:_4856{plate:THX,year:2019},name:ROS User,time:1560338697.655044,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6244{data:hello,time:1560338697.750048,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_794{age:20,car:_746{plate:THX,year:2019},name:ROS User,time:1560338697.753305,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2084{data:8,time:1560338697.755966,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2964{data:hello,time:1560338697.849938,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4098{age:20,car:_4050{plate:THX,year:2019},name:ROS User,time:1560338697.852238,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5388{data:9,time:1560338697.856423,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6268{data:hello,time:1560338697.9495,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:10,time:1560338697.953027,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338697.956389,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338698.047505,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3730{data:11,time:1560338698.053072,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4848{age:20,car:_4800{plate:THX,year:2019},name:ROS User,time:1560338698.055622,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338698.149914,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:12,time:1560338698.153386,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338698.156517,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338698.249655,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3730{data:13,time:1560338698.253031,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4848{age:20,car:_4800{plate:THX,year:2019},name:ROS User,time:1560338698.256215,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338698.349736,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:14,time:1560338698.351623,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338698.355933,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338698.449597,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3730{data:15,time:1560338698.452744,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4848{age:20,car:_4800{plate:THX,year:2019},name:ROS User,time:1560338698.457375,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338698.549588,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:16,time:1560338698.553045,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338698.556905,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338698.649567,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4018{age:20,car:_3970{plate:THX,year:2019},name:ROS User,time:1560338698.652313,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5308{data:17,time:1560338698.65487,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338698.748871,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_770{age:20,car:_722{plate:THX,year:2019},name:ROS User,time:1560338698.752695,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2060{data:18,time:1560338698.75601,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2940{data:hello,time:1560338698.847721,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3786{data:19,time:1560338698.851551,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4904{age:20,car:_4856{plate:THX,year:2019},name:ROS User,time:1560338698.85689,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6244{data:hello,time:1560338698.948891,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:20,time:1560338698.95244,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338698.957753,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338699.049842,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3730{data:21,time:1560338699.052873,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4848{age:20,car:_4800{plate:THX,year:2019},name:ROS User,time:1560338699.058235,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338699.148321,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:22,time:1560338699.15314,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338699.156103,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338699.247032,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4018{age:20,car:_3970{plate:THX,year:2019},name:ROS User,time:1560338699.253148,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5308{data:23,time:1560338699.257362,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338699.34842,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:24,time:1560338699.353502,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338699.355414,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338699.449483,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4018{age:20,car:_3970{plate:THX,year:2019},name:ROS User,time:1560338699.451528,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5308{data:25,time:1560338699.455944,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338699.549452,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_770{age:20,car:_722{plate:THX,year:2019},name:ROS User,time:1560338699.553495,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2060{data:26,time:1560338699.555063,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2940{data:hello,time:1560338699.649702,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3786{data:27,time:1560338699.651872,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4904{age:20,car:_4856{plate:THX,year:2019},name:ROS User,time:1560338699.657558,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6244{data:hello,time:1560338699.748014,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:28,time:1560338699.752657,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338699.756016,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338699.849536,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4018{age:20,car:_3970{plate:THX,year:2019},name:ROS User,time:1560338699.851395,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5308{data:29,time:1560338699.855727,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338699.949391,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:30,time:1560338699.952234,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338699.957009,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338700.049109,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3730{data:31,time:1560338700.053242,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4848{age:20,car:_4800{plate:THX,year:2019},name:ROS User,time:1560338700.055811,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338700.149663,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_770{age:20,car:_722{plate:THX,year:2019},name:ROS User,time:1560338700.152696,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2060{data:32,time:1560338700.155831,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2940{data:hello,time:1560338700.250202,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3786{data:33,time:1560338700.25397,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4904{age:20,car:_4856{plate:THX,year:2019},name:ROS User,time:1560338700.256569,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6244{data:hello,time:1560338700.349182,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:34,time:1560338700.351177,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338700.354904,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338700.449236,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4018{age:20,car:_3970{plate:THX,year:2019},name:ROS User,time:1560338700.452411,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5308{data:35,time:1560338700.456081,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338700.549354,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:36,time:1560338700.551415,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338700.556966,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338700.649696,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4018{age:20,car:_3970{plate:THX,year:2019},name:ROS User,time:1560338700.652808,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5308{data:37,time:1560338700.656791,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338700.748606,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:38,time:1560338700.753933,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338700.756753,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338700.848897,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3730{data:39,time:1560338700.853232,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4848{age:20,car:_4800{plate:THX,year:2019},name:ROS User,time:1560338700.856165,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338700.949065,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_770{age:20,car:_722{plate:THX,year:2019},name:ROS User,time:1560338700.9534,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2060{data:40,time:1560338700.955177,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2940{data:hello,time:1560338701.047723,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3786{data:41,time:1560338701.053182,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4904{age:20,car:_4856{plate:THX,year:2019},name:ROS User,time:1560338701.057764,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6244{data:hello,time:1560338701.150327,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:42,time:1560338701.151453,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338701.156174,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338701.249533,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3730{data:43,time:1560338701.252736,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4848{age:20,car:_4800{plate:THX,year:2019},name:ROS User,time:1560338701.255468,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338701.349134,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:44,time:1560338701.353537,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338701.356044,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338701.448721,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3730{data:45,time:1560338701.453521,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4848{age:20,car:_4800{plate:THX,year:2019},name:ROS User,time:1560338701.457655,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338701.549369,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_770{age:20,car:_722{plate:THX,year:2019},name:ROS User,time:1560338701.553654,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2060{data:46,time:1560338701.556107,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2940{data:hello,time:1560338701.649384,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3786{data:47,time:1560338701.651622,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4904{age:20,car:_4856{plate:THX,year:2019},name:ROS User,time:1560338701.654129,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6244{data:hello,time:1560338701.74929,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:48,time:1560338701.754831,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338701.755535,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338701.849471,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3730{data:49,time:1560338701.851969,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4848{age:20,car:_4800{plate:THX,year:2019},name:ROS User,time:1560338701.856006,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338701.949844,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_770{age:20,car:_722{plate:THX,year:2019},name:ROS User,time:1560338701.953013,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2060{data:50,time:1560338701.958631,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2940{data:hello,time:1560338702.050036,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3786{data:51,time:1560338702.053385,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4904{age:20,car:_4856{plate:THX,year:2019},name:ROS User,time:1560338702.056166,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6244{data:hello,time:1560338702.149997,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_794{age:20,car:_746{plate:THX,year:2019},name:ROS User,time:1560338702.152259,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2084{data:52,time:1560338702.154823,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2964{data:hello,time:1560338702.249912,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_3810{data:53,time:1560338702.253459,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4928{age:20,car:_4880{plate:THX,year:2019},name:ROS User,time:1560338702.25697,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6268{data:hello,time:1560338702.349806,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:54,time:1560338702.352947,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338702.357277,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338702.44974,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4018{age:20,car:_3970{plate:THX,year:2019},name:ROS User,time:1560338702.453224,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5308{data:55,time:1560338702.4559,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338702.549433,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:56,time:1560338702.552583,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338702.556709,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338702.649165,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4018{age:20,car:_3970{plate:THX,year:2019},name:ROS User,time:1560338702.652728,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5308{data:57,time:1560338702.657214,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_6188{data:hello,time:1560338702.749718,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_444{data:58,time:1560338702.752993,topic:count}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_1544{age:20,car:_1496{plate:THX,year:2019},name:ROS User,time:1560338702.756258,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_2884{data:hello,time:1560338702.849669,topic:chatter}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_4018{age:20,car:_3970{plate:THX,year:2019},name:ROS User,time:1560338702.852057,topic:person}
+
+Trace expression:
+eps*star((hello:eps)\/(count:eps)\/(over18:eps))
+Event: 
+_5308{data:59,time:1560338702.854709,topic:count}
+

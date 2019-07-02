@@ -1,0 +1,44 @@
+#!/usr/bin/env python
+
+# MIT License
+#
+# Copyright (c) [2019] [Angelo Ferrando]
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+import os
+import sys
+import yaml
+import argparse
+
+from generator import *
+
+def main(argv):
+    parser = argparse.ArgumentParser(
+        description='this is a Python program for instrumenting and generating a monitor for achieving the Runtime Verification of a ROS project',
+        formatter_class=argparse.RawTextHelpFormatter)
+    parser.add_argument('--path',
+        help='path to the ROS project to be instrumented',
+        default = './',
+        metavar='STRING')
+    args = parser.parse_args() # maybe in the future we will need more arguments, for now it's just one
+    instrument_files(args.path)
+
+if __name__ == '__main__':
+    main(sys.argv)

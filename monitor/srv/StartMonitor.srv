@@ -1,0 +1,8 @@
+bool online
+string log_file
+string action
+string url
+int32 port
+string[] topics
+---
+bool res

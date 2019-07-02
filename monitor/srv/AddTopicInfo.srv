@@ -1,0 +1,11 @@
+string node
+string name
+string data_class
+string data_class_import
+string subscribe_listener
+string tcp_nodelay
+string latch
+string headers
+string queue_size
+---
+bool res
