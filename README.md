@@ -53,7 +53,6 @@ The generator takes a command-line input argument, which is the path to the fold
 $ ./generator --path <path_to_ROS_scripts>
 ```
 
-
 # Oracle
 
 The oracle folder contains two subfolders: prolog and rml
@@ -62,6 +61,10 @@ The Prolog folder contains the prolog files implementing the semantics of the sp
 In this folder we can find the semantics of the Trace Expression formalism (the lower level calculus obtained compiling RML specifications). Beside the semantics, we have the implementation of a monitor in Prolog, both for Online and Offline RV. The Online RV is achieved through the use of Websockets; the monitor in Prolog consists in a Webserver listening on a chosen url and port. The ROS monitor generated through instrumentation will communicate the observed events at Runtime through this websocket connection. The Offline implementation is simpler, it simply consists in a Prolog implementation where a log file can be analysed offline (after the execution of the ROS system). Also in this case, the events checked by the monitor are obtained by the ROS monitor, which in the Offline scenario logs the observed events inside a log file. The same log file will be later analysed by the prolog monitor.
 
 The other folder contains example of specifications using RML.
+
+# Monitor
+
+The monitor folder contains the implementation of the monitor node which can be started and stopped at runtime through the use of specific ROS services available. In the following example we show how everything works. 
 
 # How to use ROSMonitoring (through an example extracted by ROS Tutorial)
 
@@ -112,10 +115,21 @@ We need the ROSMonitoringPlugAndPlay implementation in order to instrument and v
 
 In the terminal:
 ```bash
- $ roscd beginner_tutorials/
+ $ cd ~/catkinws/
  $ git clone https://github.com/autonomy-and-verification-uol/ROSMonitoringPlugAndPlay.git
 ```
 Now you should have your local ROSMonitoring folder.
+
+## Compile the package with catkin
+
+The monitor folder contains the monitor ROS package, and in order to be used must be compiled first.
+
+```bash
+ $ cd ~/catkinws/
+ $ catkin_make install
+```
+
+If everything goes smoothly you should have the monitor ROS package ready to be used. 
 
 ### Instrument talker and listener nodes
 
@@ -180,6 +194,18 @@ $ rosrun beginner_tutorials listener_instrumented.py
 The talker and listener now will wait for the presence of a monitor in order to register their topics (this initial phase is needed for allowing the monitor to be added at runtime).
 Make sure you either source ~/catkin_ws/devel/setup.bash everytime you wish to launch the nodes on a new terminal, or add it to your ~/.bashrc.
 
+### Adding a monitor in the middle (Offline version).
+
+Now we see how to start and stop a monitor at runtime.
+
+On a different terminal:
+```bash
+$ cd ~/catkin_ws/src/beginner_tutorials/ROSMonitoringPlugAndPlay/monitor/
+$ chmod +x monitor.py
+$ cd ~/catkin_ws/
+$ rosrun beginner_tutorials monitor.py
+[INFO] [1559652181.670203]: monitor started and ready: Offline
+```
 
 
 
