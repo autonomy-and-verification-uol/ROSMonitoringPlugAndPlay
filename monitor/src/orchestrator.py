@@ -17,7 +17,7 @@ if __name__ == '__main__':
     else:
         start_monitor = rospy.ServiceProxy('start_monitor', StartMonitor)
         print('Start Monitor [Online]')
-        start_monitor(True, 'log.txt', 'log', '127.0.0.1', 8080, []) # offline
+        start_monitor(True, 'log.txt', 'log', '127.0.0.1', 8080, []) # online
         print('Monitor Started [Online]')
         time.sleep(10)
         print('Stop Monitor [Online]')
