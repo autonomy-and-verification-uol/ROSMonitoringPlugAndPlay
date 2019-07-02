@@ -266,5 +266,6 @@ In another shell:
  $ ./orchestrator.py offline
 ```
 
+In the monitor shell (the third one), now you should see logs from the monitor. The two ROS nodes (talker and listener) are now communicating normally, but under the wood a monitor is now intercepting and logging their communication. After 10 seconds the monitor will be stopped, the orchestrator will end, and the ROS nodes will be back to communicate without a monitor in the middle. 
 
 
