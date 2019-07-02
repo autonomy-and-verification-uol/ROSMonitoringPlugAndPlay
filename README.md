@@ -159,6 +159,8 @@ global pub; pub = rospy.Publisher(name = 'chatter', data_class = String, queue_s
 ...
 ```
 
+This modification seems totally harmless. And it is! But it allows us to make pub available globally (why we need also mapping_names will be clear later on).
+
 
 
 
