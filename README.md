@@ -354,7 +354,104 @@ And in a different shell:
  $ cd ~/catkinws/src/ROSMonitoringPlugAndPlay/monitor/src/
  $ ./orchestrator online
 ```
+In the piece of output showed above we can see how the monitor, first intercepts an event, then it propagates the event to the oracle, and finally upon the reception from the oracle saying the event is consistent, it logs this information.
 
+### Using the filter action
+
+The last part of this tutorial will show the use of the monitor for filtering the wrong events.
+
+The specification file test.rml (and its compilation test.pl) are already prepared for being used in a slightly more complex example.
+
+In order to filter wrong events, we need nodes generating wrong events first.
+
+Let us change the talker.py file in the following way:
+```python
+import rospy
+from std_msgs.msg import String
+from std_msgs.msg import Int32
+
+def talker():
+    pub = rospy.Publisher('chatter', String, queue_size=10)
+    pub_c = rospy.Publisher('count', Int32, queue_size=10)
+    rospy.init_node('talker', anonymous=True)
+    rate = rospy.Rate(10) # 10hz
+    count = 0
+    while not rospy.is_shutdown():
+        hello_str = "hello"# %s" % rospy.get_time()
+        rospy.loginfo(hello_str)
+        pub.publish(hello_str)
+        rospy.loginfo('count ' + str(count))
+        pub_c.publish(count)
+        count += 1
+        rate.sleep()
+
+if __name__ == '__main__':
+    try:
+        talker()
+    except rospy.ROSInterruptException:
+        pass
+```
+With respect to the previous version, now the talker node publishes also a counter.
+
+And of course, also the listener must change in order to care about the new topic.
+```python
+import rospy
+from std_msgs.msg import String
+from std_msgs.msg import Int32
+
+def callback(data):
+    rospy.loginfo(rospy.get_caller_id() + 'I heard %s', data.data)
+
+def callback_c(data):
+    rospy.loginfo(rospy.get_caller_id() + 'I heard count %s', str(data.data))
+
+def listener():
+
+    # In ROS, nodes are uniquely named. If two nodes with the same
+    # name are launched, the previous one is kicked off. The
+    # anonymous=True flag means that rospy will choose a unique
+    # name for our 'listener' node so that multiple listeners can
+    # run simultaneously.
+    rospy.init_node('listener', anonymous=True)
+
+    rospy.Subscriber('chatter', String, callback)
+
+    rospy.Subscriber('count', Int32, callback_c)
+
+    # spin() simply keeps python from exiting until this node is stopped
+    rospy.spin()
+
+if __name__ == '__main__':
+    listener()
+```
+We now have two callbacks which are doing the same thing, to log on the terminal.
+
+Since now we have changed the files, we need to re-instrument them.
+```bash
+$ cd ~/catkin_ws/src/ROSMonitoringPlugAndPlay/instrumentation/
+$ ./generator --path ~/catkinws/src/beginner_tutorials/scripts/
+{'path': '~/catkin_ws/src/beginner_tutorials/scripts/', 'topics': 'all'}
+('chatter', ('String', 'from std_msgs.msg import String'), 'queue_size=10')
+('count', ('Int32', 'from std_msgs.msg import Int32'), 'queue_size=10')
+```
+
+The specification given in test.rml is very trivial, but, it constrains the valid values for count.
+```prolog
+hello matches {topic:'chatter',data:'hello'};
+count matches {topic:'count',data:val} with val > 100;
+
+Main = (hello \/ count)*;
+```
+The first two lines refer to the kind of events our specification handles.
+In particular, the second one has a constraint on the value observed for the topic count. Very naively, we are just saying that the count events are valid only if greater than 100.
+
+The last step is to change inside orchestrator.py the third argument of start_monitor, from 'log' to 'filter'.
+
+```python
+...
+start_monitor(True, 'log.txt', 'filter', '127.0.0.1', 8080, [])
+...
+```
 
 
 
