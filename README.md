@@ -352,7 +352,7 @@ The event {"data":"hello", "topic":"chatter"} is consistent and republished
 And in a different shell:
 ```bash
  $ cd ~/catkinws/src/ROSMonitoringPlugAndPlay/monitor/src/
- $ ./orchestrator online
+ $ ./orchestrator.py online
 ```
 In the piece of output showed above we can see how the monitor, first intercepts an event, then it propagates the event to the oracle, and finally upon the reception from the oracle saying the event is consistent, it logs this information.
 
