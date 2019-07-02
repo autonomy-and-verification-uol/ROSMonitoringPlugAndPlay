@@ -245,5 +245,26 @@ if __name__ == '__main__':
 
 orchestrator.py accepts an argument in input, which can be: online or offline. In both the cases, this simple python script will call first the start_monitor service, for telling the monitor we are want to start the verification, and then after 10 seconds, will call the stop_monitor service, for telling the monitor we are not interested in verifying the events anymore.
 
+To try the monitor, we do..
+
+In a shell:
+```bash
+ $ rosrun beginner_tutorials listener_instrumented.py
+```
+In another shell:
+```bash
+ $ rosrun beginner_tutorials talker_instrumented.py
+```
+In another shell:
+```bash
+ $ rosrun monitor monitor_template.py
+```
+In another shell:
+```bash
+ $ cd ~/catkinws/src/ROSMonitoringPlugAndPlay/monitor/src/ 
+ $ chmod +x ./orchestrator.py
+ $ ./orchestrator.py offline
+```
+
 
 
