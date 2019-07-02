@@ -136,3 +136,32 @@ $ ./generator
 ('chatter', ('String', 'from std_msgs.msg import String'), 'None', 'False', 'False', 'None', '10')
 ```
 
+Let us have a look inside the scripts folder.
+```bash
+$ cd ~/catkin_ws/src/beginner_tutorials/scripts/
+$ ls
+listener_instrumented.py  listener.py  talker_instrumented.py  talker.py
+```
+As we can see, now we have two new files: talker_instrumented.py and listener_instrumented.py
+
+These two instrumented files are equal to the previous ones. The only difference is in the substitution of the topics which are published by talker. If we compare talker.py with talker_instrumented.py, we find a small difference.
+
+In talker.py we have:
+```python
+...
+pub = rospy.Publisher('chatter', String, queue_size=10)
+...
+```
+While in talker_instrumented.py we have:
+```python
+...
+global pub; pub = rospy.Publisher(name = 'chatter', data_class = String, queue_size=10); mapping_names['chatter'] = 'chatter';
+...
+```
+
+
+
+
+
+
+
