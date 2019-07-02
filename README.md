@@ -4,6 +4,8 @@ Plug and Play version of the standard ROSMonitoring (https://github.com/autonomy
 Rather than the standard ROSMonitoring version, this implementation allows us to Plug and Play monitor at runtime. Thanks to this new feature, we can start and stop monitoring our ROS nodes at runtime, without the necessity of restarting ROS. 
 In general, we do not need to have always a monitor checking the ROS topics; but when our robot is exploited in safety critical applications, it could be necessary to check its behaviour. Thanks to the new Plug and Play feature, we can easily add a monitor to any ROS system in order to check only when it is required to (reducing as much as possible the monitor overhead).
 
+In ROSMonitoring standard, we first instrument the ROS nodes and we generate automatically a monitor customized for them. Such kind of approach can be suitable for solutions where the topics hardly change, and the ROS nodes remain always the same. This can be a limitation in more component based scenarios where we do not know all the components (nodes) a priori. ROSMonitoringPlugAndPlay does not generate a monitor through the instrumentation of the ROS nodes, but uses a general purpose node which is able to preceive and update the topics on the fly. To do this, the instrumentation process of ROSMonitoringPlugAndPlay is more complex than the one used for ROSMonitoring.
+
 # Prerequisities
 
 ROSMonitoringPlugAndPlay works only for ROS distributions >=Groovy Galapagos.
