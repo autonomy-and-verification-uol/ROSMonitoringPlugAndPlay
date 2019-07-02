@@ -282,8 +282,8 @@ The log file should look like this:
 The last step for the Offline version is to check the log file against a formal specification.
 To do this, first we copy the log file into the prolog folder, and then we run the monitor (using the already given sh file).
 ```bash
-$ cp ~/catkin_ws/log.txt ~/catkin_ws/src/beginner_tutorials/ROSMonitoring/oracle/
-$ cd ~/catkin_ws/src/beginner_tutorials/ROSMonitoring/oracle/prolog/
+$ cp ~/catkin_ws/log.txt ~/catkin_ws/src/ROSMonitoringPlugAndPlay/oracle/
+$ cd ~/catkin_ws/src/ROSMonitoringPlugAndPlay/oracle/prolog/
 $ sh offline_monitor.sh ../rml/test.pl ../log.txt
 ...
 matched event #89
