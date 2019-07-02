@@ -115,7 +115,7 @@ We need the ROSMonitoringPlugAndPlay implementation in order to instrument and v
 
 In the terminal:
 ```bash
- $ cd ~/catkinws/
+ $ cd ~/catkinws/src/
  $ git clone https://github.com/autonomy-and-verification-uol/ROSMonitoringPlugAndPlay.git
 ```
 Now you should have your local ROSMonitoring folder.
@@ -200,11 +200,11 @@ Now we see how to start and stop a monitor at runtime.
 
 On a different terminal:
 ```bash
-$ cd ~/catkin_ws/src/beginner_tutorials/ROSMonitoringPlugAndPlay/monitor/
-$ chmod +x monitor.py
+$ cd ~/catkin_ws/src/ROSMonitoringPlugAndPlay/monitor/src/
+$ chmod +x monitor_template.py
 $ cd ~/catkin_ws/
-$ rosrun beginner_tutorials monitor.py
-[INFO] [1559652181.670203]: monitor started and ready: Offline
+$ rosrun monitor monitor_template.py
+[INFO] [1562078627.372750]: monitor node has been created, but it is not running yet
 ```
 
 
