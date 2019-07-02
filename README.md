@@ -144,7 +144,7 @@ Execute the generator as follows.
 
 ```bash
 $ chmod +x generator
-$ ./generator
+$ ./generator --path ~/catkinws/src/beginner_tutorials/scripts/
 $ ./generator
 {'path': '~/catkin_ws/src/rosmon/scripts/', 'topics': 'all'}
 ('chatter', ('String', 'from std_msgs.msg import String'), 'None', 'False', 'False', 'None', '10')
