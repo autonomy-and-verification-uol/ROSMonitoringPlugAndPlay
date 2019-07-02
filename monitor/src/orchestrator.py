@@ -3,18 +3,24 @@ import rospy
 from monitor.srv import *
 import time
 
-start_monitor = rospy.ServiceProxy('start_monitor', StartMonitor)
-#start_monitor(False, 'log.txt', 'log', None, None, []) # offline
-while True:
-    time.sleep(5)
-    print('Start Monitor')
-    start_monitor(True, 'log.txt', 'filter', '127.0.0.1', 8080, []) # online
-    print('Monitor started')
-    time.sleep(5)
-    #reload_imports = rospy.ServiceProxy('reload_imports', ReloadImports)
-    #reload_imports()
-    #time.sleep(5)
-    print('Stop Monitor')
-    stop_monitor = rospy.ServiceProxy('stop_monitor', StopMonitor)
-    print('Monitor stopped')
-    stop_monitor()
+if __name__ == '__main__':
+    if len(sys.argv) == 1 or sys.argv[1] == 'offline':
+        start_monitor = rospy.ServiceProxy('start_monitor', StartMonitor)
+        print('Start Monitor [Offline]')
+        start_monitor(False, 'log.txt', 'log', None, None, []) # offline
+        print('Monitor Started [Offline]')
+        time.sleep(10)
+        print('Stop Monitor [Offline]')
+        stop_monitor = rospy.ServiceProxy('stop_monitor', StopMonitor)
+        stop_monitor()
+        print('Monitor stopped [Offline]')
+    else:
+        start_monitor = rospy.ServiceProxy('start_monitor', StartMonitor)
+        print('Start Monitor [Online]')
+        start_monitor(True, 'log.txt', 'log', '127.0.0.1', 8080, []) # offline
+        print('Monitor Started [Online]')
+        time.sleep(10)
+        print('Stop Monitor [Online]')
+        stop_monitor = rospy.ServiceProxy('stop_monitor', StopMonitor)
+        stop_monitor()
+        print('Monitor stopped [Online]')
