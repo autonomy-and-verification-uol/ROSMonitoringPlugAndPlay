@@ -35,7 +35,7 @@ def main(argv):
         formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('--path',
         help='path to the ROS project to be instrumented',
-        default = './',
+        required=True,
         metavar='STRING')
     args = parser.parse_args() # maybe in the future we will need more arguments, for now it's just one
     instrument_files(args.path)
