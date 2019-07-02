@@ -35,7 +35,7 @@ def instrument_files(path): # function which instruments all the python file in 
     #return topics_with_types # return the topics instrumented with their additional information
 
 def create_monitor_imports(topics_with_types):
-    with open('./monitor/src/monitor_imports.py', 'w') as monitor_imports:
+    with open('../monitor/src/monitor_imports.py', 'w') as monitor_imports:
         # write the imports for the msg types used by the monitor (extracted by the previous instrumentation)
         msg_type_imports = ''
         for imp in set([imp for (_, _, (_, imp), _, _, _, _, _) in topics_with_types]):
