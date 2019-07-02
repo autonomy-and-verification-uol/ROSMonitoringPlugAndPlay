@@ -161,7 +161,24 @@ global pub; pub = rospy.Publisher(name = 'chatter', data_class = String, queue_s
 
 This modification seems totally harmless. And it is! But it allows us to make pub available globally (why we need also mapping_names will be clear later on).
 
-
+Remember: roscore must be running on another terminal..
+```bash
+$ cd ~/catkin_ws/src/beginner_tutorials/scripts/
+$ chmod +x talker_instrumented.py
+$ chmod +x listener_instrumented.py
+```
+In a terminal then
+```bash
+$ cd ~/catkin_ws/
+$ rosrun beginner_tutorials talker_instrumented.py
+```
+and in a different one
+```bash
+$ cd ~/catkin_ws/
+$ rosrun beginner_tutorials listener_instrumented.py
+```
+The talker and listener now will wait for the presence of a monitor in order to register their topics (this initial phase is needed for allowing the monitor to be added at runtime).
+Make sure you either source ~/catkin_ws/devel/setup.bash everytime you wish to launch the nodes on a new terminal, or add it to your ~/.bashrc.
 
 
 
