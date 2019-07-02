@@ -307,5 +307,35 @@ $ java -jar rml-compiler.jar --input test.rml --output test.pl
 The compiler will automatically compile the rml file into the equivalent prolog one, which can be used directly from the Prolog monitor.
 More information about RML can be found at: https://rmlatdibris.github.io/
 
+### Adding the monitor in the middle (Online version).
+
+Before we used our monitor only for logging purposes. But, the real power of our monitor lies in being the bridge among ROS nodes communications.
+Instead of generating only a log file, we can check the events generated inside ROS dynamically.
+
+As for the Offline case, also here we have different parameters for customize the RV process (passed in the second branch in the orchestrator script). More specifically, we need to inform the ROS monitor about the oracle (Webserver Prolog here). So, we have to specify where it will be listening (url) and on which port. A new parameter available only for the Online version is 'action'. Thanks to this argument, we can choose what the monitor can do when an error is observed (i.e. an event inconsistent with our specification). The possible values for now are: log and filter.
+ - log, the monitor logs everything (also the errors)
+ - filter, the monitor propagates only the events which are consistent with the specification
+ 
+ For running the online monitor, we first need to set up the webserver with the oracle (the real verifier of our specifications, RML is the default but it is not hard to change it).
+ 
+ Thus, before running our Online monitor, we need to execute the oracle. In the standard version of ROSMonitoringPlugAndPlay, we have a Webserver Prolog, as possible implementation of our oracle.
+```bash
+$ cd ~/catkin_ws/src/ROSMonitoring/oracle/prolog/
+$ sh online_monitor.sh ../rml/test.pl
+% Started server at http://127.0.0.1:8080/
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?-
+```
+The Webserver is now ready and running.
+ 
+ 
+
+
 
 
