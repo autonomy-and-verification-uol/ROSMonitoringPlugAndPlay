@@ -207,6 +207,43 @@ $ rosrun monitor monitor_template.py
 [INFO] [1562078627.372750]: monitor node has been created, but it is not running yet
 ```
 
+The monitor node has started but will not intercept any ROS message until we ask for it.
+In the repository we have a very simple file showing a naive way for starting and stopping the monitor.
+
+The file is orchestrator.py
+
+```python
+#!/usr/bin/env python
+import rospy
+from monitor.srv import *
+import time
+
+if __name__ == '__main__':
+    if len(sys.argv) == 1 or sys.argv[1] == 'offline':
+        start_monitor = rospy.ServiceProxy('start_monitor', StartMonitor)
+        print('Start Monitor [Offline]')
+        # start the monitor offline (False), logging the events into log.txt
+        start_monitor(False, 'log.txt', 'log', None, None, []) # offline
+        print('Monitor Started [Offline]')
+        time.sleep(10)
+        print('Stop Monitor [Offline]')
+        stop_monitor = rospy.ServiceProxy('stop_monitor', StopMonitor)
+        stop_monitor()
+        print('Monitor stopped [Offline]')
+    else:
+        start_monitor = rospy.ServiceProxy('start_monitor', StartMonitor)
+        print('Start Monitor [Online]')
+        # start the monitor online (True), logging the events into log.txt and expecting the oracle connected on 127.0.0.1:8080
+        start_monitor(True, 'log.txt', 'log', '127.0.0.1', 8080, []) # offline
+        print('Monitor Started [Online]')
+        time.sleep(10)
+        print('Stop Monitor [Online]')
+        stop_monitor = rospy.ServiceProxy('stop_monitor', StopMonitor)
+        stop_monitor()
+        print('Monitor stopped [Online]')
+```
+
+orchestrator.py accepts an argument in input, which can be: online or offline. In both the cases, this simple python script will call first the start_monitor service, for telling the monitor we are want to start the verification, and then after 10 seconds, will call the stop_monitor service, for telling the monitor we are not interested in verifying the events anymore.
 
 
 
