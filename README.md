@@ -119,4 +119,20 @@ Now you should have your local ROSMonitoring folder.
 
 ### Instrument talker and listener nodes
 
+The first thing to do in order to monitor our nodes is to instrument them. Thanks to this step, our monitor will be able to intercept the topics of our interest (even though for now we have only the 'chatter' topic).
+
+```bash
+ $ cd ROSMonitoringPlugAndPlay/instrumentation/
+```
+
+Inside this folder you should find: generator, and generator.py.
+Execute the generator as follows.
+
+```bash
+$ chmod +x generator
+$ ./generator
+$ ./generator
+{'path': '~/catkin_ws/src/rosmon/scripts/', 'topics': 'all'}
+('chatter', ('String', 'from std_msgs.msg import String'), 'None', 'False', 'False', 'None', '10')
+```
 
